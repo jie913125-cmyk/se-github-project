@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>带问题的HTML示例</title>
+    <style>
+        /* 样式正常：设置标题颜色为蓝色 */
+        .title {
+            color: blue;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 问题注释：img标签缺少src属性，导致图片无法显示 -->
+    <!-- 错误原因：src是图片标签的核心属性，用于指定图片路径，缺失则浏览器无法加载图片 -->
+    <!-- 修复方案：给img添加合法的src值（本地路径或网络图片URL），例：src="logo.png" -->
+    <h1 class="title">测试页面</h1>
+    <p>这是一段正常文本</p >
+    <!-- 下方img标签存在问题 -->
+    < img alt="示例图片" /> <!-- 缺少src属性，图片无法渲染 -->
+</body>
+</html>
