@@ -34,7 +34,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST_IP }}  # 云服务器 IP
-          username: lin  # 服务器登录用户名（默认 ubuntu）
+          username: ubuntu  # 服务器登录用户名（默认 ubuntu）
           key: ${{ secrets.SSH_PRIVATE_KEY }}  # SSH 私钥
           script_stop: true  # 脚本执行出错时立即停止
           # 远程执行的部署脚本
