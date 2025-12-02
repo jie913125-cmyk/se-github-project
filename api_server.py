@@ -8,7 +8,7 @@ class SimpleAPI(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'application/json')
         self.end_headers()
         # 要返回的数据（服务名称、状态、版本）
-        response = {"status": "active", "service": "OrderService", "version": "2.0"}
+        response = {"status": "active", "service": "OrderService", "version": "2.1"}
         self.wfile.write(json.dumps(response).encode())
 
 # 让服务在8080端口运行（所有IP都能访问）
